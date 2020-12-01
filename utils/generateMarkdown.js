@@ -37,4 +37,14 @@ function generateMarkdown(data) {
 }
 
 
-module.exports = generateMarkdown;
+module.exports = {
+  title,
+  description,
+  installation,
+  usage,
+  contribution,
+  test,
+  username,
+  email,
+}
+generateMarkdown;

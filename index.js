@@ -1,10 +1,12 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generateMarkdown = require('./utils/generateMarkdown.js');
 
 
 // array of questions for user
-const questions = [
 
+const questions = 
+inquirer.prompt([
     {
       type: 'input',
       message: 'What is your project title?',
@@ -24,7 +26,7 @@ const questions = [
       type: 'list',
       message: 'What type of license are you using?',
       name: 'license',
-      choices: ['Apache', 'Boost Software License', 'GNU (General Public License)', 'MIT', 'Mozilla', 'The Unlicense']
+      choices: ['Apache', 'Boost Software License', 'GNU (General Public License)', 'MIT', 'Mozilla']
     },
     {
       type: 'input',
@@ -47,25 +49,36 @@ const questions = [
       name: 'email',
     },
 
-];
+])
+.then((response)=>{
+
+
+  fs.appendFile('README.md', + "\n" + JSON.stringify(response), (err) => {
+      err ? console.log(err) : console.log ("Added to File");
+  });
+
+});
+
+// .then(response) () => {
 
   //create new function () that is called above 
 
 // function to write README file
-function writeToFile(filename, data) {
-    fs.writeFile('README.md', data, (err) =>
-    err ? console.log(err) : console.log('Data Logged')
-    
-    )};
+//  function writeToFile (('README.md', response) {
+//     fs.appendFile('README.md', '\n', (err) => 
+//     err ? console.log(err) : console.log('Added to file.'))
+//  }
+//  };
+
+
+
 
 // function to initialize program
-function init() {
+// function init() {
 
-    inquirer.prompt(questions).then((response) =>{
-        JSON.stringify(data)
-})
 
-};
+
+// };
 
 // function call to initialize program
-init();
+// init();

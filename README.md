@@ -1,1 +1,1 @@
-# readmeGenerator
+# readmeGenerator0{"title":"Readme Generator","description":"Command line prompts to create a readme.md file","installation":"No","license":"MIT","test":"Clone repo","username":"cwf1984","email":"malloyvanessa559@yahoo.com"}
