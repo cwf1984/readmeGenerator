@@ -1,11 +1,10 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateMarkdown = require('./utils/generateMarkdown.js');
-
+const newMarkdown = require('./utils/generateMarkdown.js');
 
 // array of questions for user
 
-const questions = 
+const questions = () =>
 inquirer.prompt([
     {
       type: 'input',
@@ -49,36 +48,48 @@ inquirer.prompt([
       name: 'email',
     },
 
-])
-.then((response)=>{
+]);
+
+function writeToFile(data) {
+
+  questions(data).then( (data) => fs.writeFile('README.md', JSON.stringify(generateMarkdown(data)), (err) => {
+    err ? console.log(err) : console.log ("Success!");
+  }))
+
+}
+
+writeToFile();
+
+// function init() {
+//   newMarkdown(data);
+//   writeToFile();
+// }
+
+// .then((data) => {
+//   console.log(data);
+// });
+ 
+// function writeToFile(){
+//   fs.writeFile(data.title + ".md", generateMarkdown(data), (err) =>
+//  err ? console.log(err) : console.log ("Success!"))};
+
+//  writeToFile();
 
 
-  fs.appendFile('README.md', + "\n" + JSON.stringify(response), (err) => {
-      err ? console.log(err) : console.log ("Added to File");
-  });
+// function writeToFile() {
 
-});
-
-// .then(response) () => {
-
-  //create new function () that is called above 
-
-// function to write README file
-//  function writeToFile (('README.md', response) {
-//     fs.appendFile('README.md', '\n', (err) => 
-//     err ? console.log(err) : console.log('Added to file.'))
-//  }
-//  };
+//   questions().then((data) => fs.writeFile('README.md', JSON.stringify(generateMarkdown(data)), (err) => {
+//     err ? console.log('Failed to add to file') : console.log('Success!');
+//   }));
+  
+// }
 
 
 
 
-// function to initialize program
 // function init() {
 
+// }
 
 
-// };
-
-// function call to initialize program
 // init();

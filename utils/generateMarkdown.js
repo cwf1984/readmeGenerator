@@ -1,8 +1,6 @@
 // function to generate markdown for README
-function generateMarkdown(data) {
-  
-  return `
-  # ${data.title}
+let generateMarkdown = (data) => {
+  return `# ${data.title}
 
   ## Table of Contents
   1. Description
@@ -37,14 +35,4 @@ function generateMarkdown(data) {
 }
 
 
-module.exports = {
-  title,
-  description,
-  installation,
-  usage,
-  contribution,
-  test,
-  username,
-  email,
-}
-generateMarkdown;
+module.exports = generateMarkdown();
