@@ -1,6 +1,8 @@
 // function to generate markdown for README
-let generateMarkdown = (data) => {
-  return `# ${data.title}
+const generateMarkdown = (response) => {
+
+
+  return `## ${response.title}
 
   ## Table of Contents
   1. Description
@@ -11,28 +13,29 @@ let generateMarkdown = (data) => {
   6. Questions
 
   ## Description
-  ${data.description}
+  ${response.description}
 
   ## Installation Instructions
-  ${data.installation}
+  ${response.installation}
 
   ## Usage Information
-  ${data.usage}
+  ${response.usage}
 
   ## Contribution Guidelines
-  ${data.contribution}
+  ${response.contribution}
 
   ## Test
-  ${data.test}
+  ${response.test}
 
   ## Questions
   For additional questions or information, please reach me at the links below:
   
-  Github: [${data.username}]
-  Email: [${data.email}]
+  Github: [${response.username}]
+  Email: [${response.email}]
 
 `;
+
 }
 
 
-module.exports = generateMarkdown();
+module.exports = generateMarkdown;
