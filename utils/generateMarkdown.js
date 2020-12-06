@@ -33,9 +33,9 @@ const generateMarkdown = (response) => {
   ## Questions
   For additional questions or information, please reach me at the links below:
   
-  Github: [${response.username}]
+  Github: ${response.username} (https:github.com/${response.username})
   <br>
-  Email: [${response.email}]
+  Email: ${response.email} (mailto:${response.email})
 
 `;
 

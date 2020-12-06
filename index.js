@@ -1,5 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const shields = require('shields');
 
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
@@ -64,7 +65,7 @@ const questions = ( ) => {
 
 function writeToFile(response) {
 
-  fs.writeFile('README.md', generateMarkdown(response), (err) => {
+  fs.writeFile('newREADME.md', generateMarkdown(response), (err) => {
     err ? console.log(err) : console.log ('Success!');
   })
 
