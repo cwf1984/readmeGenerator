@@ -22,16 +22,21 @@ const questions = ( ) => {
       message: 'How is your project installed?',
       name: 'installation',
     },
-    {//license
-      type: 'list',
-      message: 'What type of license are you using?',
-      name: 'license',
-      choices: ['Apache', 'Boost Software License', 'GNU (General Public License)', 'MIT', 'Mozilla']
+    {
+      type: 'usage',
+      message: "How is your program used?",
+      name: 'usage',
     },
     {
       type: 'input',
       message: 'Has anyone contributed to your project? If so, please include names.',
       name: 'contribution',
+    },
+    {
+      type: 'list',
+      message: 'What type of license are you using?',
+      name: 'license',
+      choices: ['Apache', 'Boost Software License', 'GNU (General Public License)', 'MIT', 'Mozilla']
     },
     {
       type: 'input',
@@ -51,9 +56,8 @@ const questions = ( ) => {
 
 
 ]).then((response)=>{
-  console.log(response);
+
   writeToFile(response);
-  
 
 })
 }

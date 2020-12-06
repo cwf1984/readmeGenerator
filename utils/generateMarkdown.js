@@ -24,6 +24,9 @@ const generateMarkdown = (response) => {
   ## Contribution Guidelines
   ${response.contribution}
 
+  ## License
+  ${response.license}
+
   ## Test
   ${response.test}
 
@@ -31,6 +34,7 @@ const generateMarkdown = (response) => {
   For additional questions or information, please reach me at the links below:
   
   Github: [${response.username}]
+  <br>
   Email: [${response.email}]
 
 `;

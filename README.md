@@ -1,4 +1,4 @@
-## 
+## Homework Week 9 - Readme Generator
 
   ## Table of Contents
   1. Description
@@ -9,23 +9,27 @@
   6. Questions
 
   ## Description
-  
+  A project created using JavaScript which, when run in node, create a README.md file.
 
   ## Installation Instructions
-  
+  By cloning the SSH Key (git@github.com:cwf1984/readmeGenerator.git) and installing inquirer in node (npm i inquirer).
 
   ## Usage Information
-  undefined
+  When a user runs the program in node, a list of questions and prompts display in the console for the user to answer or respond to. Once these are answered, a readme file is generated.
 
   ## Contribution Guidelines
-  
+  No
+
+  ## License
+  MIT
 
   ## Test
-  
+  Once they have cloned the repo, user should run the program in their console.
 
   ## Questions
   For additional questions or information, please reach me at the links below:
   
-  Github: []
-  Email: []
+  Github: [cwf1984]
+  <br>
+  Email: [malloyvanessa559@yahoo.com]
 
