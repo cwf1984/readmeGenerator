@@ -17,8 +17,9 @@
   ## Usage Information
   When a user runs the program in node, a list of questions and prompts display in the console for the user to answer or respond to. Once these are answered, a readme file is generated.
 
-  ## Contribution Guidelines
-  No
+  ## Video
+  
+  ![Project Video] (https://drive.google.com/file/d/1kcXoyhmbhKGCJXv_2HbzbQxLNgG5vIgB/view)
 
   ## License
   MIT
