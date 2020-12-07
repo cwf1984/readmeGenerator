@@ -1,8 +1,15 @@
+const badges = {
+  Apache: `[![apache license] (https://img.shields.io/badge/license-Apache-blue)]`,
+  GNU: `[![gnu license] (https://img.shields.io/badge/license-GNU-blue)]`,
+  MIT: `[![mit license](https://img.shields.io/badge/license-MIT-blue)]`, 
+  Mozilla: `![mozilla license] (https://img.shields.io/badge/license-Mozilla-blue)]`,
+}
+
 // function to generate markdown for README
+
 const generateMarkdown = (response) => {
 
-
-  return `## ${response.title}
+  return `## ${response.title}  
 
   ## Table of Contents
   1. Description
@@ -33,9 +40,9 @@ const generateMarkdown = (response) => {
   ## Questions
   For additional questions or information, please reach me at the links below:
   
-  Github: ${response.username} (https:github.com/${response.username})
+  Github: ${response.username} (https://github.com/${response.username})
   <br>
-  Email: ${response.email} (mailto:${response.email})
+  Email: ${response.email}
 
 `;
 

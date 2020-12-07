@@ -1,6 +1,5 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const shields = require('shields');
 
 const generateMarkdown = require('./utils/generateMarkdown.js');
 
@@ -37,7 +36,7 @@ const questions = ( ) => {
       type: 'list',
       message: 'What type of license are you using?',
       name: 'license',
-      choices: ['Apache', 'Boost Software License', 'GNU (General Public License)', 'MIT', 'Mozilla']
+      choices: ['Apache', 'GNU (General Public License)', 'MIT', 'Mozilla']
     },
     {
       type: 'input',
