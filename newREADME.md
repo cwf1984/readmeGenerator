@@ -1,4 +1,4 @@
-## README Generator  
+## Readme Generator  
 
   ## Table of Contents
   1. Description
@@ -9,13 +9,13 @@
   6. Questions
 
   ## Description
-  A project created using JavaScript which, when run in Node, creates a newREADME.md file.
+  A project created using JavaScript which creates a newREADME.md file when run in node.
 
   ## Installation Instructions
-  By cloning the SSH Key and installing inquirer in node (npm i inquirer).
+  By cloning the SSH key (git@github.com:cwf1984/readmeGenerator.git) and installing inquirer in node (npm i inquirer).
 
   ## Usage Information
-  When a user runs the program in node, a list of questions and prompts displays in the console for the user to answer or respond to. Once these have been answered, a readme file in generated.
+  When a user runs the program in node, a list of questions and prompts display in the console for the user to answer or respond to. Once these have been answered, a readme file is generated.
 
   ## Contribution Guidelines
   No
@@ -24,7 +24,7 @@
   MIT
 
   ## Test
-  Once they have cloned the repo, users should run the program in their console.
+  Once the repo has been cloned, the user should run the program in their console.
 
   ## Questions
   For additional questions or information, please reach me at the links below:
