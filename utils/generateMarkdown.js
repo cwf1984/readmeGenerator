@@ -27,7 +27,7 @@ const generateMarkdown = (response) => {
   ${response.contribution}
 
   ## License
-  ${response.license}
+  ${response.license}![badge](https://img.shields.io/badge/license-${response.license}-blue)
 
   ## Test
   ${response.test}
