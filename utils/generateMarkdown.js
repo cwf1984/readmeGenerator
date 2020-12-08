@@ -1,15 +1,10 @@
-const badges = {
-  Apache: `[![apache license] (https://img.shields.io/badge/license-Apache-blue)]`,
-  GNU: `[![gnu license] (https://img.shields.io/badge/license-GNU-blue)]`,
-  MIT: `[![mit license](https://img.shields.io/badge/license-MIT-blue)]`, 
-  Mozilla: `![mozilla license] (https://img.shields.io/badge/license-Mozilla-blue)]`,
-}
-
 // function to generate markdown for README
 
-const generateMarkdown = (response) => {
+const generateMarkdown = (response) => {  
 
-  return `## ${response.title}  
+  return `## ${response.title} 
+  
+  ![badge](https://img.shields.io/badge/license-${response.license}-blue)
 
   ## Table of Contents
   1. Description

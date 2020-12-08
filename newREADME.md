@@ -1,4 +1,6 @@
-## Readme Generator  
+## Readme Generator 
+  
+  ![badge](https://img.shields.io/badge/license-MIT-blue)
 
   ## Table of Contents
   1. Description
@@ -9,13 +11,13 @@
   6. Questions
 
   ## Description
-  A project created using JavaScript which creates a newREADME.md file when run in node.
+  A project that is created using JavaScript which creates a newREADME.md file when run in node.
 
   ## Installation Instructions
   By cloning the SSH key (git@github.com:cwf1984/readmeGenerator.git) and installing inquirer in node (npm i inquirer).
 
   ## Usage Information
-  When a user runs the program in node, a list of questions and prompts display in the console for the user to answer or respond to. Once these have been answered, a readme file is generated.
+  When a user runs the program in node, a list of questions and prompts display in teh console for the user to answer or respond to. Once these have been answered, a readme file is generated.
 
   ## Contribution Guidelines
   No
