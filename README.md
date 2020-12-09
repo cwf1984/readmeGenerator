@@ -26,7 +26,7 @@
 
   Click the link below to watch a video of the program as it is run:
   
-  ![video](https://drive.google.com/file/d/15Yl1x2vyL6edmjCO6MMKfc5JZuLGPHYu/view)
+  https://drive.google.com/file/d/15Yl1x2vyL6edmjCO6MMKfc5JZuLGPHYu/view
 
   ## License
 
