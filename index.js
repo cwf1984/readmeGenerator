@@ -36,7 +36,7 @@ const questions = ( ) => {
       type: 'list',
       message: 'What type of license are you using?',
       name: 'license',
-      choices: ['Apache', 'GNU (General Public License)', 'MIT', 'Mozilla']
+      choices: ['Apache', 'MIT', 'Mozilla']
     },
     {
       type: 'input',
